@@ -1,0 +1,9 @@
+services:
+  postgres-airbnb:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=airbnb-db'
+      - 'POSTGRES_PASSWORD=airbnbuserpassword'
+      - 'POSTGRES_USER=airbnb-user'
+    ports:
+      - '5432'
